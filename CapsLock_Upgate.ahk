@@ -28,6 +28,10 @@
 ;|Use it whatever and wherever you like. Hope it help                 |
 ;=====================================================================o
 
+;=====================================================================o
+;                   Last modified by Shadow Deng                      | 
+;                            on 2018/9/9                              |
+;---------------------------------------------------------------------o
 
 ;=====================================================================o
 ;                       CapsLock Initializer                         ;|
@@ -60,8 +64,8 @@ return                                                               ;|
 CapsLock::                                                           ;|
 if(A_PriorHotkey <> "CapsLock" or A_TimeSincePriorHotkey > 300)      ;|
 {                                                                    ;|
-	KeyWait, CapsLock                                                ;|
-	return                                                           ;|
+	KeyWait, CapsLock                                            ;|
+	return                                                       ;|
 }                                                                    ;|
 Send, {ESC}                                                          ;|
 return                                                               ;|
@@ -85,49 +89,49 @@ return                                                               ;|
 ;-----------------------------------o---------------------------------o
 CapsLock & h::                                                       ;|
 if GetKeyState("shift") = 0                                          ;|
-	Send, {left}                                                     ;|
+	Send, {left}                                                 ;|
 else                                                                 ;|
     Send, +{left}                                                    ;|
 return                                                               ;|
 CapsLock & j::                                                       ;|
 if GetKeyState("shift") = 0                                          ;|
-	Send, ^{left}                                                    ;|
+	Send, ^{left}                                                ;|
 else                                                                 ;|
     Send, ^+{left}                                                   ;|
 return                                                               ;|
 CapsLock & k::                                                       ;|
 if GetKeyState("shift") = 0                                          ;|
-	Send, ^{right}                                                   ;|
+	Send, ^{right}                                               ;|
 else                                                                 ;|
     Send, ^+{right}                                                  ;|
 return                                                               ;|
 CapsLock & l::                                                       ;|
 if GetKeyState("shift") = 0                                          ;|
-	Send, {right}                                                    ;|
+	Send, {right}                                                ;|
 else                                                                 ;|
     Send, +{right}                                                   ;|
 return                                                               ;|
 CapsLock & SC027::                                                   ;|
 if GetKeyState("shift") = 0                                          ;|
-	Send, {home}                                                     ;|
+	Send, {home}                                                 ;|
 else                                                                 ;|
     Send, +{home}                                                    ;|
 return                                                               ;|
 CapsLock & '::                                                       ;|
 if GetKeyState("shift") = 0                                          ;|
-	Send, {end}                                                      ;|
+	Send, {end}                                                  ;|
 else                                                                 ;|
     Send, +{end}                                                     ;|
 return                                                               ;|
 CapsLock & u::                                                       ;|
 if GetKeyState("shift") = 0                                          ;|
-	Send, {up}                                                       ;|
+	Send, {up}                                                   ;|
 else                                                                 ;|
     Send, +{up}                                                      ;|
 return                                                               ;|
 CapsLock & i::                                                       ;|
 if GetKeyState("shift") = 0                                          ;|
-	Send, {down}                                                     ;|
+	Send, {down}                                                 ;|
 else                                                                 ;|
     Send, +{down}                                                    ;|
 return                                                               ;|
